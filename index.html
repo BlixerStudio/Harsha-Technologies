@@ -408,43 +408,97 @@
         <div class="container reviews-flex">
           <!-- Left: Scrolling Reviews -->
           <div class="reviews-column">
-            <h2 class="section-title">Customer Reviews</h2>
+            <h2 class="section-title">What Our Customers Say</h2>
+             <!-- Google Badge -->
+            <div class="google-badge">
+               <div class="google-logo">
+                 <span style="color:#4285F4">G</span><span style="color:#DB4437">o</span><span style="color:#F4B400">o</span><span style="color:#4285F4">g</span><span style="color:#0F9D58">l</span><span style="color:#DB4437">e</span>
+               </div>
+               <div class="google-rating">
+                 <span class="rating-score">4.8</span>
+                 <div class="stars">★★★★★</div>
+                 <span class="review-count">150+ Reviews</span>
+               </div>
+            </div>
+
             <div class="reviews-list-wrapper" data-speed="1">
               <div class="reviews-list" id="reviewsList">
-                <div class="review-card">
+                <!-- Review 1 -->
+                <div class="review-card google-review">
+                  <div class="review-header">
+                    <div class="reviewer-initial" style="background:#FFA726">J</div>
+                    <div class="reviewer-info">
+                       <p class="reviewer-name">John Doe</p>
+                       <span class="review-date">2 days ago</span>
+                    </div>
+                    <img src="svg/google-icon.svg" alt="G" class="g-icon-small" onerror="this.style.display='none'"> 
+                  </div>
+                  <div class="stars">★★★★★</div>
                   <p class="review-text">
-                    Amazing service! My printer was fixed in no time.
+                    Amazing service! My HP printer was fixed in no time. The technician was polite and explained the issue clearly.
                   </p>
-                  <p class="review-author">— John Doe</p>
                 </div>
-                <div class="review-card">
+
+                <!-- Review 2 -->
+                <div class="review-card google-review">
+                  <div class="review-header">
+                    <div class="reviewer-initial" style="background:#66BB6A">P</div>
+                    <div class="reviewer-info">
+                       <p class="reviewer-name">Priya S.</p>
+                       <span class="review-date">1 week ago</span>
+                    </div>
+                     <img src="svg/google-icon.svg" alt="G" class="g-icon-small" onerror="this.style.display='none'">
+                  </div>
+                  <div class="stars">★★★★★</div>
                   <p class="review-text">
-                    Highly recommend. Professional and quick!
+                    Highly recommend for projector repair. They fixed my Epson projector overheating issue at a very reasonable price.
                   </p>
-                  <p class="review-author">— Jane Smith</p>
                 </div>
-                <div class="review-card">
+
+                <!-- Review 3 -->
+                <div class="review-card google-review">
+                  <div class="review-header">
+                     <div class="reviewer-initial" style="background:#42A5F5">A</div>
+                    <div class="reviewer-info">
+                       <p class="reviewer-name">Alex Johnson</p>
+                       <span class="review-date">3 weeks ago</span>
+                    </div>
+                     <img src="svg/google-icon.svg" alt="G" class="g-icon-small" onerror="this.style.display='none'">
+                  </div>
+                  <div class="stars">★★★★★</div>
                   <p class="review-text">
-                    Doorstep service is so convenient. Loved it.
+                    Doorstep service is so convenient. The technician arrived on time and fixed the paper jam in 20 mins.
                   </p>
-                  <p class="review-author">— Alex Johnson</p>
                 </div>
-                <div class="review-card">
-                  <p class="review-text">Excellent support and fast repair.</p>
-                  <p class="review-author">— Maria Lee</p>
-                </div>
-                <!-- duplicate for seamless loop -->
-                <div class="review-card">
+                 <!-- Review 4 -->
+                <div class="review-card google-review">
+                  <div class="review-header">
+                     <div class="reviewer-initial" style="background:#AB47BC">K</div>
+                    <div class="reviewer-info">
+                       <p class="reviewer-name">Kavya Reddy</p>
+                       <span class="review-date">1 month ago</span>
+                    </div>
+                     <img src="svg/google-icon.svg" alt="G" class="g-icon-small" onerror="this.style.display='none'">
+                  </div>
+                  <div class="stars">★★★★★</div>
                   <p class="review-text">
-                    Amazing service! My printer was fixed in no time.
+                    Excellent support and fast repair. Best printer service center in Kukatpally.
                   </p>
-                  <p class="review-author">— John Doe</p>
                 </div>
-                <div class="review-card">
+
+                <!-- Duplicate for loop -->
+                 <div class="review-card google-review">
+                  <div class="review-header">
+                    <div class="reviewer-initial" style="background:#FFA726">J</div>
+                    <div class="reviewer-info">
+                       <p class="reviewer-name">John Doe</p>
+                       <span class="review-date">2 days ago</span>
+                    </div>
+                  </div>
+                  <div class="stars">★★★★★</div>
                   <p class="review-text">
-                    Highly recommend. Professional and quick!
+                    Amazing service! My HP printer was fixed in no time. The technician was polite and explained the issue clearly.
                   </p>
-                  <p class="review-author">— Jane Smith</p>
                 </div>
               </div>
             </div>
@@ -518,6 +572,11 @@
             </form>
           </div>
         </div>
+        
+        <!-- GOOGLE MAP EMBED -->
+        <div class="map-container" style="width: 100%; height: 400px; margin-top: 40px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+           <iframe loading="lazy" src="https://maps.google.com/maps?q=15-21-150/11/2+New+Balaji+Nagar+Kukatpally+Hyderabad+500072&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </section>
     </main>
 
@@ -543,6 +602,8 @@
             <li><a href="epson-printer-repair-hyderabad.html">Epson Printer Repair</a></li>
             <li><a href="brother-printer-repair-hyderabad.html">Brother Printer Repair</a></li>
             <li><a href="printer-repair-kukatpally.html">Projector Repair Service</a></li>
+            <li><a href="doorstep-repair-service.html">Doorstep Repair Service</a></li>
+            <li><a href="doorstep-repair-service.html">Doorstep Repair Service</a></li>
           </ul>
         </div>
 
@@ -559,8 +620,8 @@
         <div class="footer-item">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Doorstep Repair & Service</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy & Terms</a></li>
+            <li><a href="doorstep-repair-service.html">Book Doorstep Service</a></li>
           </ul>
         </div>
       </div>
