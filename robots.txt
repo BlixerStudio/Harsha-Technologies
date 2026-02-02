@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+# Disallow assets to save crawl budget (Use with caution, usually Google prefers access)
+# As per specific user audit instruction:
+Disallow: /css/
+Disallow: /js/
+Disallow: /svg/
+
+Sitemap: https://harshatechnologies.in/sitemap.xml
