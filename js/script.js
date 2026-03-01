@@ -116,25 +116,6 @@ document.addEventListener("DOMContentLoaded", () => {
     wrapper.addEventListener("click", () => (paused = !paused));
 
     autoScrollReviews();
-
-    // Add new review
-    if (reviewForm) {
-      reviewForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const name = reviewForm.querySelector("#reviewName").value.trim();
-        const message = reviewForm.querySelector("#reviewMessage").value.trim();
-        if (!name || !message) return;
-
-        const card = document.createElement("div");
-        card.className = "review-card";
-        card.innerHTML = `
-                    <p class="review-text">“${message}”</p>
-                    <span class="review-author">— ${name}</span>
-                `;
-        reviewList.appendChild(card);
-        reviewForm.reset();
-      });
-    }
   }
 
   /* =======================

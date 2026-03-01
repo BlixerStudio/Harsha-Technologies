@@ -1,118 +1,108 @@
 /**
- * Harsha Technologies - Dynamic Google Reviews Fetcher
+ * Harsha Technologies - Dynamic Google Reviews Fetcher (Secure Vercel API Version)
  *
- * This script uses the Google Maps JavaScript API (Places Service) to fetch reviews
- * for a specific location. It filters for 4+ star reviews and displays them.
- *
- * INSTRUCTIONS FOR USER:
- * 1. You must obtain a Google Maps JavaScript API Key with "Places API" enabled.
- * 2. Replace 'YOUR_API_KEY' in the script tag in index.html.
- * 3. Replace 'YOUR_PLACE_ID' below with your actual Google Place ID.
- *    (Find it here: https://developers.google.com/maps/documentation/places/web-service/place-id)
+ * This script fetches Google Reviews securely from our Vercel Serverless Function (/api/reviews)
  */
 
-// CONFIGURATION
-const GOOGLE_PLACE_ID = "YOUR_PLACE_ID_HERE"; // <--- REPLACE THIS
-const MIN_RATING = 4.0; // Only show 4 star and above
-
-function initGoogleReviews() {
-  const mapDiv = document.createElement("div"); // Dummy div for service
-  const service = new google.maps.places.PlacesService(mapDiv);
-
-  const request = {
-    placeId: GOOGLE_PLACE_ID,
-    fields: ["reviews", "rating", "user_ratings_total"],
-  };
-
-  service.getDetails(request, (place, status) => {
-    if (
-      status === google.maps.places.PlacesServiceStatus.OK &&
-      place &&
-      place.reviews
-    ) {
-      renderReviews(place.reviews);
-      updateBadge(place.rating, place.user_ratings_total);
-    } else {
-      console.warn("Google Reviews fetch failed or no reviews found:", status);
-      // Fallback is already static in HTML, so no action needed if fail
-    }
-  });
-}
-
-function renderReviews(reviews) {
+document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("reviewsList");
-  if (!container) return;
+  const fallbackComments = container ? container.innerHTML : ""; // Save static reviews in case of API failure
 
-  // Filter and sort
-  const filteredReviews = reviews.filter((r) => r.rating >= MIN_RATING);
+  async function fetchGoogleReviews() {
+    if (!container) return;
 
-  if (filteredReviews.length === 0) return; // Keep static if no high-rated reviews
+    try {
+      // Show loading state
+      container.innerHTML = `<div class="review-card" style="text-align:center"><p class="review-text">Loading verified Google Reviews...</p></div>`;
 
-  container.innerHTML = ""; // Clear static reviews
+      // Fetch from our secure Vercel API endpoint
+      const response = await fetch('/api/reviews');
 
-  filteredReviews.forEach((review) => {
-    const card = document.createElement("div");
-    card.className = "review-card google-review";
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
 
-    const relativeTime = review.relative_time_description || "Recently";
+      const data = await response.json();
 
-    card.innerHTML = `
-            <div class="review-header">
-                <div class="reviewer-initial" style="background:${getRandomColor()}">${review.author_name.charAt(0)}</div>
-                <div class="reviewer-info">
-                   <p class="reviewer-name">${review.author_name}</p>
-                   <span class="review-date">${relativeTime}</span>
-                </div>
-                 <img src="svg/google-icon.svg" alt="G" class="g-icon-small"> 
-            </div>
-            <div class="stars">${"★".repeat(Math.round(review.rating))}</div>
-            <p class="review-text">
-                ${truncateText(review.text, 120)}
-            </p>
-        `;
+      if (data && data.reviews && data.reviews.length > 0) {
+        renderGoogleReviews(data.reviews);
+      } else {
+        // Fallback to static if no reviews found but API succeeded
+        container.innerHTML = fallbackComments;
+      }
+    } catch (error) {
+      console.error("Failed to fetch dynamic Google Reviews, falling back to static reviews.", error);
+      // Fallback to static HTML if the API fails or is not configured yet
+      container.innerHTML = fallbackComments;
+    }
+  }
 
-    container.appendChild(card);
-  });
+  function renderGoogleReviews(reviews) {
+    if (!container) return;
 
-  // Clone for infinite scroll effect if needed
-  if (filteredReviews.length > 2) {
-    filteredReviews.forEach((review) => {
+    container.innerHTML = ""; // Clear loader/static
+
+    // Filter for 4+ star reviews
+    const highRated = reviews.filter(r => r.rating >= 4);
+    const reviewsToShow = highRated.length > 0 ? highRated : reviews;
+
+    reviewsToShow.forEach(review => {
       const card = document.createElement("div");
       card.className = "review-card google-review";
-      // ... (simplified clone logic, or just let CSS animation loop)
-      // For simplicity, we just append content. real infinite scroll logic in CSS might need duplication.
-      // Let's duplicate the first few to ensure smooth loop.
+
+      card.innerHTML = `
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+          <div>
+            <div class="stars" style="color: #fbbc04; font-size: 1.2rem; margin-bottom: 5px;">${"★".repeat(Math.round(review.rating))}</div>
+            <p class="review-author" style="margin: 0; font-weight: 600; color: #333;">${review.author_name}</p>
+            <span style="font-size: 0.8rem; color: #777;">${review.relative_time_description}</span>
+          </div>
+          ${review.profile_photo_url
+          ? `<img src="${review.profile_photo_url}" alt="${review.author_name}" style="width: 40px; height: 40px; border-radius: 50%;">`
+          : `<div style="width: 40px; height: 40px; border-radius: 50%; background: #0056b3; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">${review.author_name.charAt(0)}</div>`
+        }
+        </div>
+        <p class="review-text" style="font-size: 0.95rem; line-height: 1.5; color: #555;">
+            "${truncateText(review.text, 150)}"
+        </p>
+      `;
+      container.appendChild(card);
     });
+
+    // Duplicate reviews to create the continuous scrolling effect
+    // We append the same array again to the DOM
+    if (reviewsToShow.length > 0) {
+      reviewsToShow.forEach(review => {
+        const card = document.createElement("div");
+        card.className = "review-card google-review";
+
+        card.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+            <div>
+              <div class="stars" style="color: #fbbc04; font-size: 1.2rem; margin-bottom: 5px;">${"★".repeat(Math.round(review.rating))}</div>
+              <p class="review-author" style="margin: 0; font-weight: 600; color: #333;">${review.author_name}</p>
+              <span style="font-size: 0.8rem; color: #777;">${review.relative_time_description}</span>
+            </div>
+            ${review.profile_photo_url
+            ? `<img src="${review.profile_photo_url}" alt="${review.author_name}" style="width: 40px; height: 40px; border-radius: 50%;">`
+            : `<div style="width: 40px; height: 40px; border-radius: 50%; background: #0056b3; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">${review.author_name.charAt(0)}</div>`
+          }
+          </div>
+          <p class="review-text" style="font-size: 0.95rem; line-height: 1.5; color: #555;">
+              "${truncateText(review.text, 150)}"
+          </p>
+        `;
+        container.appendChild(card);
+      });
+    }
   }
-}
 
-function updateBadge(rating, count) {
-  const scoreEl = document.querySelector(".rating-score");
-  const countEl = document.querySelector(".review-count");
+  function truncateText(text, length) {
+    if (!text) return "";
+    if (text.length <= length) return text;
+    return text.substr(0, length) + "...";
+  }
 
-  if (rating && scoreEl) scoreEl.textContent = rating;
-  if (count && countEl) countEl.textContent = `${count}+ Reviews`;
-}
-
-function getRandomColor() {
-  const colors = [
-    "#FFA726",
-    "#66BB6A",
-    "#42A5F5",
-    "#AB47BC",
-    "#EF5350",
-    "#5C6BC0",
-  ];
-  return colors[Math.floor(Math.random() * colors.length)];
-}
-
-function truncateText(text, length) {
-  if (text.length <= length) return text;
-  return text.substr(0, length) + "...";
-}
-
-// Global callback for Maps API
-window.initMap = function () {
-  // We don't need a map, just the Places library.
-  initGoogleReviews();
-};
+  // Execute the fetch
+  fetchGoogleReviews();
+});
