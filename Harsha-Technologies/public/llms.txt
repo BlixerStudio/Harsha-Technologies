@@ -5,9 +5,9 @@ business_name: Harsha Technologies
 website: https://harshatechnologies.in
 phone: +91 90634 84335
 whatsapp: +91 90634 84335
-email: enquiry@harshatechnologies.in
+email: naresh@harshatechnologies.in
 address: Ground Floor, Nirav's Royal Fontana, New Balaji Nagar, Kukatpally, Hyderabad, Telangana
-geo: 17.481099, 78.408577
+geo: 17.480533, 78.409812
 hours: 8:00 AM to 9:00 PM, 7 days a week
 experience: 13+ years
 

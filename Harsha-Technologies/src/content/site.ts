@@ -5,16 +5,16 @@ export const business = {
   phoneHref: "tel:+919063484335",
   whatsappHref:
     "https://wa.me/919063484335?text=Hello%20Harsha%20Technologies%2C%20I%20need%20printer%20repair%20support.",
-  email: "enquiry@harshatechnologies.in",
+  email: "naresh@harshatechnologies.in",
   address:
     "Ground Floor, Nirav's Royal Fontana, New Balaji Nagar, Balaji Nagar, Kukatpally, Hyderabad, Telangana",
   shortAddress: "Kukatpally, Hyderabad",
-  directionsHref: "https://www.google.com/maps?q=17.481099,78.408577",
+  directionsHref: "https://www.google.com/maps?q=17.48053349154913,78.40981258253333",
   hours: "8:00 AM to 9:00 PM",
   years: "13+ years",
   coordinates: {
-    latitude: 17.481099,
-    longitude: 78.408577
+    latitude: 17.48053349154913,
+    longitude: 78.40981258253333
   }
 };
 

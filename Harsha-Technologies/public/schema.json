@@ -5,7 +5,7 @@
   "url": "https://harshatechnologies.in",
   "logo": "https://harshatechnologies.in/images/brand/harsha-technologies-logo.png",
   "telephone": "+919063484335",
-  "email": "enquiry@harshatechnologies.in",
+  "email": "naresh@harshatechnologies.in",
   "description": "Same-day doorstep printer repair and office printer AMC in Hyderabad. 13+ years experience. HP, Canon, Epson, Brother and all major brands.",
   "foundingDate": "2012",
   "address": {
@@ -18,8 +18,8 @@
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 17.481099,
-    "longitude": 78.408577
+    "latitude": 17.48053349154913,
+    "longitude": 78.40981258253333
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
@@ -35,7 +35,7 @@
   ],
   "serviceArea": {
     "@type": "GeoCircle",
-    "geoMidpoint": {"@type":"GeoCoordinates","latitude":17.481099,"longitude":78.408577},
+    "geoMidpoint": {"@type":"GeoCoordinates","latitude":17.48053349154913,"longitude":78.40981258253333},
     "geoRadius": "20000"
   },
   "hasOfferCatalog": {
@@ -54,5 +54,5 @@
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Cartridge Refill","url":"https://harshatechnologies.in/services/cartridge-refill"}}
     ]
   },
-  "sameAs": ["https://www.google.com/maps?q=17.481099,78.408577"]
+  "sameAs": ["https://www.google.com/maps?q=17.48053349154913,78.40981258253333"]
 }
