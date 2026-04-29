@@ -1,0 +1,58 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Harsha Technologies",
+  "url": "https://harshatechnologies.in",
+  "logo": "https://harshatechnologies.in/images/brand/harsha-technologies-logo.png",
+  "telephone": "+919063484335",
+  "email": "enquiry@harshatechnologies.in",
+  "description": "Same-day doorstep printer repair and office printer AMC in Hyderabad. 13+ years experience. HP, Canon, Epson, Brother and all major brands.",
+  "foundingDate": "2012",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ground Floor, Nirav's Royal Fontana, New Balaji Nagar, Balaji Nagar",
+    "addressLocality": "Kukatpally",
+    "addressRegion": "Telangana",
+    "postalCode": "500072",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 17.481099,
+    "longitude": 78.408577
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "08:00",
+    "closes": "21:00"
+  },
+  "areaServed": [
+    "Kukatpally","KPHB","Miyapur","Nizampet","Moosapet","JNTU","Bachupally",
+    "Pragathi Nagar","Madhapur","HITEC City","Gachibowli","Ameerpet",
+    "Erragadda","Jubilee Hills","Banjara Hills","Chandanagar","Secunderabad",
+    "Kondapur","Kompally","Lingampally"
+  ],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {"@type":"GeoCoordinates","latitude":17.481099,"longitude":78.408577},
+    "geoRadius": "20000"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Printer Repair Services Hyderabad",
+    "itemListElement": [
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Laser Printer Repair","url":"https://harshatechnologies.in/services/laser-printer-repair"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Inkjet Printer Repair","url":"https://harshatechnologies.in/services/inkjet-printer-repair"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Same Day Printer Repair","url":"https://harshatechnologies.in/services/same-day-printer-repair"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Office Printer AMC","url":"https://harshatechnologies.in/business-amc/office-printer-amc-hyderabad"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"HP Printer Repair","url":"https://harshatechnologies.in/brands/hp-printer-repair"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Canon Printer Repair","url":"https://harshatechnologies.in/brands/canon-printer-repair"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Epson Printer Repair","url":"https://harshatechnologies.in/brands/epson-printer-repair"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"WiFi Printer Setup","url":"https://harshatechnologies.in/services/wifi-printer-setup"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Scanner Repair","url":"https://harshatechnologies.in/services/scanner-repair"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Cartridge Refill","url":"https://harshatechnologies.in/services/cartridge-refill"}}
+    ]
+  },
+  "sameAs": ["https://www.google.com/maps?q=17.481099,78.408577"]
+}

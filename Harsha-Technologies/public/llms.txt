@@ -1,0 +1,100 @@
+# Harsha Technologies — Printer Repair Hyderabad
+
+## Business Identity
+business_name: Harsha Technologies
+website: https://harshatechnologies.in
+phone: +91 90634 84335
+whatsapp: +91 90634 84335
+email: enquiry@harshatechnologies.in
+address: Ground Floor, Nirav's Royal Fontana, New Balaji Nagar, Kukatpally, Hyderabad, Telangana
+geo: 17.481099, 78.408577
+hours: 8:00 AM to 9:00 PM, 7 days a week
+experience: 13+ years
+
+## Primary Service
+Same-day doorstep printer repair in Hyderabad. Technician visits the customer location for homes and offices.
+
+## Commercial Service
+Office printer AMC (Annual Maintenance Contract) for recurring maintenance and priority breakdown support.
+
+## Brands Supported
+HP, Canon, Epson, Brother, Samsung, Xerox, Ricoh, Kyocera, Panasonic, Zebra
+
+## Service Areas
+Kukatpally, KPHB, Miyapur, Nizampet, Moosapet, JNTU, Bachupally, Pragathi Nagar, Madhapur, HITEC City, Gachibowli, Ameerpet, Erragadda, Jubilee Hills, Banjara Hills, Chandanagar, Kondapur, Secunderabad, Kompally, Lingampally
+
+## Core Services
+- Printer repair (laser, inkjet, multifunction)
+- HP printer repair
+- Canon, Epson, Brother, Xerox, Ricoh, Kyocera, Panasonic repair
+- Paper jam repair
+- Printer offline fix
+- WiFi printer setup
+- Driver installation
+- Cartridge refill
+- Toner replacement
+- Scanner repair
+- Copier repair
+- Office printer AMC
+
+## Customer Segments
+- Homes and residential users
+- Offices and IT companies
+- Schools and colleges
+- Clinics and hospitals
+- Co-working spaces
+- Xerox centers
+- Retail outlets
+
+## Booking Method
+Call or WhatsApp +91 90634 84335. Share printer brand, area, home or office, and the issue.
+
+## Key Pages
+/: Homepage
+/services: All services
+/areas: All service areas
+/brands: All printer brands
+/business-amc: Commercial AMC
+/blog: Printer tips and guides
+/contact: Contact
+/about: About
+/reviews: Customer reviews
+/request-callback: Request callback
+
+## Service Pages
+/services/laser-printer-repair
+/services/inkjet-printer-repair
+/services/same-day-printer-repair
+/services/scanner-repair
+/services/cartridge-refill
+/services/wifi-printer-setup
+/services/printer-repair
+/services/copier-repair
+
+## Brand Pages
+/brands/hp-printer-repair
+/brands/canon-printer-repair
+/brands/epson-printer-repair
+/brands/brother-printer-repair
+/brands/samsung-printer-repair
+/brands/xerox-printer-repair
+/brands/ricoh-printer-repair
+/brands/kyocera-printer-repair
+/brands/panasonic-printer-repair
+
+## Area Pages
+/areas/kukatpally-printer-repair
+/areas/kphb-printer-repair
+/areas/miyapur-printer-repair
+/areas/madhapur-printer-repair
+/areas/hitech-city-printer-repair
+/areas/gachibowli-printer-repair
+/areas/ameerpet-printer-repair
+/areas/secunderabad-printer-repair
+
+## AMC Pages
+/business-amc/office-printer-amc-hyderabad
+/business-amc/printer-amc-hyderabad
+/business-amc/school-printer-amc
+/business-amc/corporate-printer-support
+/business-amc/clinic-printer-support
