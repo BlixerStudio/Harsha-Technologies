@@ -2,7 +2,8 @@
 
 import Script from "next/script";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "AW-10854028175";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-98YQ31V967";
+const ADS_ID = "AW-10854028175";
 
 export function Analytics() {
   if (!GA_ID) return null;
@@ -18,6 +19,7 @@ export function Analytics() {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${GA_ID}', { page_path: window.location.pathname });
+          gtag('config', '${ADS_ID}');
 
           // Track phone clicks
           document.addEventListener('click', function(e) {
