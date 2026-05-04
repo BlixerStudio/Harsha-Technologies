@@ -2,38 +2,64 @@
 
 import Script from "next/script";
 
+// GA4 measurement ID — set NEXT_PUBLIC_GA_ID in Vercel env vars to override
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-98YQ31V967";
+// Google Ads conversion ID
 const ADS_ID = "AW-10854028175";
 
 export function Analytics() {
-  if (!GA_ID) return null;
   return (
     <>
+      {/* Load the gtag library once using the GA4 ID */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
         strategy="afterInteractive"
       />
-      <Script id="ga-init" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_ID}', { page_path: window.location.pathname });
-          gtag('config', '${ADS_ID}');
 
-          // Track phone clicks
-          document.addEventListener('click', function(e) {
-            var el = e.target.closest('a[href^="tel:"]');
-            if (el) gtag('event', 'phone_click', { event_category: 'conversion', event_label: el.href });
-          });
+      {/* Initialise GA4 + Google Ads and set up conversion event listeners */}
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-          // Track WhatsApp clicks
-          document.addEventListener('click', function(e) {
-            var el = e.target.closest('a[href*="wa.me"]');
-            if (el) gtag('event', 'whatsapp_click', { event_category: 'conversion', event_label: 'whatsapp' });
-          });
-        `}
-      </Script>
+            // GA4
+            gtag('config', '${GA_ID}', { send_page_view: true });
+
+            // Google Ads — links this site to your Ads account
+            gtag('config', '${ADS_ID}');
+
+            // Phone click → conversion event
+            document.addEventListener('click', function(e) {
+              var el = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+              if (el) {
+                gtag('event', 'conversion', {
+                  send_to: '${ADS_ID}',
+                  event_category: 'Phone',
+                  event_label: 'call_click'
+                });
+                gtag('event', 'phone_click', { event_category: 'conversion' });
+              }
+            });
+
+            // WhatsApp click → conversion event
+            document.addEventListener('click', function(e) {
+              var el = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"]') : null;
+              if (el) {
+                gtag('event', 'conversion', {
+                  send_to: '${ADS_ID}',
+                  event_category: 'WhatsApp',
+                  event_label: 'whatsapp_click'
+                });
+                gtag('event', 'whatsapp_click', { event_category: 'conversion' });
+              }
+            });
+          `,
+        }}
+      />
     </>
   );
 }

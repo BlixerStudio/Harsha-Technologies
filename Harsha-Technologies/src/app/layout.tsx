@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true
+  },
+  // Paste ONLY the content="..." value from Search Console HTML tag here
+  // e.g. if the tag is <meta name="google-site-verification" content="AbCdEf123">
+  // set it to: google: "AbCdEf123"
+  verification: {
+    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? ""
   }
 };
 
@@ -29,9 +35,7 @@ export default function RootLayout({
       <body>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema())
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }}
         />
         <Analytics />
         <Header />
