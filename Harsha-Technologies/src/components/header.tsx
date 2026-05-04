@@ -27,7 +27,7 @@ export function Header() {
         <Link className="flex items-center gap-3" href="/" aria-label="Harsha Technologies home">
           <Image
             src="/images/brand/harsha-technologies-logo.png"
-            alt="Harsha Technologies logo"
+            alt="Harsha Technologies"
             width={54}
             height={44}
             priority

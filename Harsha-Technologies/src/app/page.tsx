@@ -35,7 +35,7 @@ const faqs = [
 ];
 
 export const metadata: Metadata = pageMetadata({
-  title: "Same-Day Printer Repair Hyderabad",
+  title: "Printer Repair Services in Hyderabad",
   description:
     "Harsha Technologies provides same-day doorstep printer repair, HP printer support and office printer AMC in Kukatpally and across Hyderabad.",
   path: "/"
@@ -49,10 +49,10 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
       />
       <HeroSection
-        title="Same-Day Printer Repair in Hyderabad"
-        description={`Harsha Technologies provides fast doorstep printer repair from ${business.shortAddress} for homes, offices, schools, clinics and businesses that cannot afford printing downtime.`}
+        title="Harsha Technologies"
+        description={`Fast doorstep printer repair in Hyderabad for homes, offices, schools, clinics and businesses from ${business.shortAddress}.`}
         image="/images/services/printer-repair-hyderabad-temporary.png"
-        imageAlt="Printer repair support in Hyderabad"
+        imageAlt="Harsha Technologies printer repair support in Hyderabad"
         points={[
           "HP, Canon, Epson, Brother and more",
           "Call and WhatsApp booking",

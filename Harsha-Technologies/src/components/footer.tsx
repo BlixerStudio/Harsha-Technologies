@@ -109,7 +109,7 @@ export function Footer() {
 
       <div className="container-page mt-10 border-t border-white/10 pt-6 text-xs text-blue-200">
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} {business.name}. Printer Repair Hyderabad.</p>
+          <p>© 2026 Harsha Technologies</p>
           <div className="flex gap-4">
             <Link className="hover:text-white" href="/sitemap">Sitemap</Link>
             <a className="hover:text-white" href="/llms.txt">llms.txt</a>

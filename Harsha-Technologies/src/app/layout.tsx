@@ -5,12 +5,12 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { MobileActionBar } from "@/components/mobile-action-bar";
 import { business } from "@/content/site";
-import { localBusinessSchema } from "@/lib/schema";
+import { localBusinessSchema, organizationSchema, websiteSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   metadataBase: new URL(business.domain),
   title: {
-    default: "Printer Repair Hyderabad | Harsha Technologies",
+    default: "Harsha Technologies | Printer Repair Services in Hyderabad",
     template: "%s | Harsha Technologies"
   },
   description:
@@ -36,6 +36,14 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema()) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }}
         />
         <Analytics />
         <Header />

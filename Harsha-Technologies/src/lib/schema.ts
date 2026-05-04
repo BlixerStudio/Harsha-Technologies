@@ -66,3 +66,28 @@ export function breadcrumbSchema(items: Array<{ name: string; url: string }>) {
     }))
   };
 }
+
+export function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Harsha Technologies",
+    alternateName: "Harsha Technologies",
+    url: "https://harshatechnologies.in/"
+  };
+}
+
+export function organizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Harsha Technologies",
+    url: "https://harshatechnologies.in/",
+    logo: "https://harshatechnologies.in/logo.png",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+91-9063484335",
+      contactType: "customer service"
+    }
+  };
+}
