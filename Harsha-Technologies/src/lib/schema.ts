@@ -8,13 +8,18 @@ export function localBusinessSchema() {
     url: business.domain,
     telephone: business.phoneDisplay,
     email: business.email,
-    image: `${business.domain}/images/brand/harsha-technologies-logo.png`,
+    image: `${business.domain}${business.logoPath}`,
+    logo: `${business.domain}${business.logoPath}`,
+    founder: {
+      "@type": "Person",
+      name: business.ownerName
+    },
     address: {
       "@type": "PostalAddress",
-      streetAddress:
-        "Ground Floor, Nirav's Royal Fontana, New Balaji Nagar, Balaji Nagar",
-      addressLocality: "Kukatpally, Hyderabad",
-      addressRegion: "Telangana",
+      streetAddress: business.streetAddress,
+      addressLocality: business.addressLocality,
+      addressRegion: business.addressRegion,
+      postalCode: business.postalCode,
       addressCountry: "IN"
     },
     geo: {
@@ -83,7 +88,11 @@ export function organizationSchema() {
     "@type": "Organization",
     name: "Harsha Technologies",
     url: "https://harshatechnologies.in/",
-    logo: "https://harshatechnologies.in/logo.png",
+    logo: `${business.domain}${business.logoPath}`,
+    founder: {
+      "@type": "Person",
+      name: business.ownerName
+    },
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+91-9063484335",

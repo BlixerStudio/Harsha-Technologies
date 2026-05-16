@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   },
   description:
     "Same-day doorstep printer repair and office printer AMC support in Hyderabad from Harsha Technologies, Kukatpally.",
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: business.logoPath, type: "image/png" }
+    ],
+    shortcut: "/favicon.png",
+    apple: "/apple-touch-icon.png"
+  },
   robots: {
     index: true,
     follow: true

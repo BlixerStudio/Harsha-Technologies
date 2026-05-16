@@ -7,6 +7,8 @@ import { HeroSection } from "@/components/hero-section";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceGrid } from "@/components/service-grid";
 import { TrustBar } from "@/components/trust-bar";
+import { areasData } from "@/content/areas-data";
+import { brandsData } from "@/content/brands-data";
 import { brands, business, commercialSegments, primaryAreas } from "@/content/site";
 import { faqSchema } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
@@ -33,6 +35,18 @@ const faqs = [
       "Yes. You can call or send your printer brand, area and issue on WhatsApp for faster booking."
   }
 ];
+
+function areaHref(areaName: string) {
+  if (areaName === "Kukatpally") return "/areas/kukatpally-printer-repair";
+  const area = areasData.find((item) => item.name === areaName);
+  return area ? `/areas/${area.slug}` : "/areas";
+}
+
+function brandHref(brandName: string) {
+  if (brandName === "HP") return "/brands/hp-printer-repair";
+  const brand = brandsData.find((item) => item.name === brandName);
+  return brand ? `/brands/${brand.slug}` : "/brands";
+}
 
 export const metadata: Metadata = pageMetadata({
   title: "Printer Repair Services in Hyderabad",
@@ -102,9 +116,13 @@ export default function HomePage() {
             />
             <div className="flex flex-wrap gap-2">
               {primaryAreas.map((area) => (
-                <span className="rounded-md border border-line bg-white px-3 py-2 text-sm font-semibold text-slate-700" key={area}>
+                <Link
+                  className="rounded-md border border-line bg-white px-3 py-2 text-sm font-semibold text-slate-700 transition hover:border-brand-blue hover:text-brand-blue"
+                  href={areaHref(area)}
+                  key={area}
+                >
                   {area}
-                </span>
+                </Link>
               ))}
             </div>
             <Link className="mt-6 inline-flex font-bold text-brand-blue" href="/areas/kukatpally-printer-repair">
@@ -115,9 +133,13 @@ export default function HomePage() {
             <SectionHeading title="Brands supported" />
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
               {brands.map((brand) => (
-                <div className="rounded-lg border border-line bg-brand-soft p-4 text-center font-extrabold text-brand-navy" key={brand}>
+                <Link
+                  className="rounded-lg border border-line bg-brand-soft p-4 text-center font-extrabold text-brand-navy transition hover:border-brand-blue hover:bg-blue-50"
+                  href={brandHref(brand)}
+                  key={brand}
+                >
                   {brand}
-                </div>
+                </Link>
               ))}
             </div>
             <Link className="mt-6 inline-flex font-bold text-brand-blue" href="/brands/hp-printer-repair">

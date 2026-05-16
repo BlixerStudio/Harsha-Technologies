@@ -39,6 +39,7 @@ export default function SitemapPage() {
           { label: "Blog", href: "/blog" }, { label: "About", href: "/about" },
           { label: "Reviews", href: "/reviews" }, { label: "Contact", href: "/contact" },
           { label: "Request Callback", href: "/request-callback" },
+          { label: "Printer Repair Services and Locations", href: "/printer-repair-service-locations-hyderabad" },
         ]} />
         <Section title="Service Pages" links={servicesData.map(s => ({ label: s.name, href: `/services/${s.slug}` }))} />
         <Section title="Brand Pages" links={[

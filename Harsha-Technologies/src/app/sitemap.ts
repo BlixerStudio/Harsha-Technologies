@@ -18,6 +18,7 @@ function buildRoutes(): SitemapRoute[] {
   const routes: SitemapRoute[] = [
     { url: "/", priority: 1.0, changeFrequency: "weekly" },
     { url: "/services", priority: 0.9, changeFrequency: "monthly" },
+    { url: "/printer-repair-service-locations-hyderabad", priority: 0.9, changeFrequency: "monthly" },
     { url: "/contact", priority: 0.9, changeFrequency: "monthly" },
     { url: "/about", priority: 0.7, changeFrequency: "monthly" },
     { url: "/reviews", priority: 0.8, changeFrequency: "monthly" },

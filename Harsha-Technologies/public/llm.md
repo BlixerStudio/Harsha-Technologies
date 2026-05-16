@@ -1,6 +1,6 @@
 # Harsha Technologies
 
-Harsha Technologies is a printer repair and office printer maintenance service based in Kukatpally, Hyderabad.
+Harsha Technologies is a printer repair and office printer maintenance service owned by Pothugunta Naresh and based in Kukatpally, Hyderabad.
 
 The business provides doorstep printer repair for homes and offices, with support for HP, Canon, Epson, Brother, Samsung, Xerox, Ricoh, Kyocera, Panasonic, Zebra and other major printer brands.
 
@@ -16,6 +16,7 @@ Priority routes:
 
 - /
 - /services
+- /printer-repair-service-locations-hyderabad
 - /contact
 - /areas/kukatpally-printer-repair
 - /brands/hp-printer-repair

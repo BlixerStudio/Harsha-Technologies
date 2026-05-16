@@ -2,11 +2,12 @@
 
 ## Business Identity
 business_name: Harsha Technologies
+owner: Pothugunta Naresh
 website: https://harshatechnologies.in
 phone: +91 90634 84335
 whatsapp: +91 90634 84335
 email: naresh@harshatechnologies.in
-address: Ground Floor, Nirav's Royal Fontana, New Balaji Nagar, Kukatpally, Hyderabad, Telangana
+address: Ground Floor, Nirav's Royal Fontana, New Balaji Nagar, Balaji Nagar, Kukatpally, Hyderabad, Telangana
 geo: 17.480533, 78.409812
 hours: 8:00 AM to 9:00 PM, 7 days a week
 experience: 13+ years
@@ -52,6 +53,7 @@ Call or WhatsApp +91 90634 84335. Share printer brand, area, home or office, and
 ## Key Pages
 /: Homepage
 /services: All services
+/printer-repair-service-locations-hyderabad: Printer repair services and locations hub
 /areas: All service areas
 /brands: All printer brands
 /business-amc: Commercial AMC

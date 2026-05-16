@@ -28,10 +28,10 @@ export function Header() {
           <Image
             src="/images/brand/harsha-technologies-logo.png"
             alt="Harsha Technologies"
-            width={54}
-            height={44}
+            width={170}
+            height={80}
             priority
-            className="h-11 w-auto"
+            className="h-14 w-auto object-contain"
           />
           <span className="leading-tight">
             <span className="block text-base font-extrabold text-brand-navy sm:text-lg">

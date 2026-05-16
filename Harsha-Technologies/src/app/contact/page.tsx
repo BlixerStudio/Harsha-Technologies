@@ -59,6 +59,7 @@ export default function ContactPage() {
               <a className="rounded-lg border border-line bg-white p-5 shadow-sm" href={business.directionsHref} target="_blank" rel="noreferrer">
                 <MapPin className="mb-3 text-brand-blue" aria-hidden="true" size={24} />
                 <h2 className="font-extrabold text-brand-navy">Service location</h2>
+                <p className="mt-2 text-sm font-semibold text-brand-navy">Owner: {business.ownerName}</p>
                 <p className="mt-2 text-sm leading-6 text-muted">{business.address}</p>
               </a>
             </div>

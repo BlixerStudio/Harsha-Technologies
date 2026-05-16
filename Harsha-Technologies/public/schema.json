@@ -7,11 +7,15 @@
   "telephone": "+919063484335",
   "email": "naresh@harshatechnologies.in",
   "description": "Same-day doorstep printer repair and office printer AMC in Hyderabad. 13+ years experience. HP, Canon, Epson, Brother and all major brands.",
+  "founder": {
+    "@type": "Person",
+    "name": "Pothugunta Naresh"
+  },
   "foundingDate": "2012",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Ground Floor, Nirav's Royal Fontana, New Balaji Nagar, Balaji Nagar",
-    "addressLocality": "Kukatpally",
+    "addressLocality": "Kukatpally, Hyderabad",
     "addressRegion": "Telangana",
     "postalCode": "500072",
     "addressCountry": "IN"

@@ -1,5 +1,6 @@
 export const business = {
   name: "Harsha Technologies",
+  ownerName: "Pothugunta Naresh",
   domain: "https://harshatechnologies.in",
   phoneDisplay: "+91 90634 84335",
   phoneHref: "tel:+919063484335",
@@ -8,7 +9,13 @@ export const business = {
   email: "naresh@harshatechnologies.in",
   address:
     "Ground Floor, Nirav's Royal Fontana, New Balaji Nagar, Balaji Nagar, Kukatpally, Hyderabad, Telangana",
+  streetAddress:
+    "Ground Floor, Nirav's Royal Fontana, New Balaji Nagar, Balaji Nagar",
+  addressLocality: "Kukatpally, Hyderabad",
+  addressRegion: "Telangana",
+  postalCode: "500072",
   shortAddress: "Kukatpally, Hyderabad",
+  logoPath: "/images/brand/harsha-technologies-logo.png",
   directionsHref: "https://www.google.com/maps?q=17.48053349154913,78.40981258253333",
   hours: "8:00 AM to 9:00 PM",
   years: "13+ years",
@@ -53,7 +60,7 @@ export const brands = [
 export const services = [
   {
     title: "Printer Repair",
-    href: "/services",
+    href: "/services/printer-repair",
     summary:
       "Doorstep diagnosis and repair for home and office printers across Hyderabad.",
     image: "/images/services/printer-repair-hyderabad-temporary.png"
@@ -74,21 +81,21 @@ export const services = [
   },
   {
     title: "Paper Jam Fix",
-    href: "/services",
+    href: "/services/printer-repair",
     summary:
       "Roller, pickup, feeder and alignment checks for repeated paper jam problems.",
     image: "/images/services/printer-paper-jam-repair.jpg"
   },
   {
     title: "WiFi Printer Setup",
-    href: "/services",
+    href: "/services/wifi-printer-setup",
     summary:
       "Wireless, driver and shared printer setup for homes and office teams.",
     image: "/images/services/wifi-printer-setup-hyderabad.jpg"
   },
   {
     title: "Laser Printer Repair",
-    href: "/services",
+    href: "/services/laser-printer-repair",
     summary:
       "Fuser, toner, drum, print quality and no-power troubleshooting.",
     image: "/images/services/laser-printer-repair-hyderabad.jpg"
@@ -115,6 +122,7 @@ export const commercialSegments = [
 
 export const navItems = [
   { label: "Services", href: "/services" },
+  { label: "Locations", href: "/printer-repair-service-locations-hyderabad" },
   { label: "Brands", href: "/brands" },
   { label: "Areas", href: "/areas" },
   { label: "Business AMC", href: "/business-amc" },

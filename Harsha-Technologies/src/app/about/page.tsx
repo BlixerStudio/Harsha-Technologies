@@ -75,6 +75,10 @@ export default function AboutPage() {
                 <dd className="mt-1 text-xl font-black text-brand-navy">{business.years} in printer repair</dd>
               </div>
               <div>
+                <dt className="text-sm font-bold text-muted">Business owner</dt>
+                <dd className="mt-1 font-semibold text-brand-navy">{business.ownerName}</dd>
+              </div>
+              <div>
                 <dt className="text-sm font-bold text-muted">Location</dt>
                 <dd className="mt-1 font-semibold text-brand-navy">{business.address}</dd>
               </div>

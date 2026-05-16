@@ -32,7 +32,8 @@ const footerCompany = [
   ["Blog", "/blog"],
   ["Contact", "/contact"],
   ["Request Callback", "/request-callback"],
-  ["Areas We Serve", "/areas"]
+  ["Areas We Serve", "/areas"],
+  ["Service Locations", "/printer-repair-service-locations-hyderabad"]
 ];
 
 export function Footer() {
@@ -45,6 +46,7 @@ export function Footer() {
             Trusted printer repair and office printer maintenance from Kukatpally, Hyderabad. Same-day doorstep support for homes, offices, schools and businesses.
           </p>
           <p className="mt-4 text-sm font-semibold">{business.phoneDisplay}</p>
+          <p className="mt-1 text-xs text-blue-200">Owner: {business.ownerName}</p>
           <p className="mt-1 text-xs text-blue-200">{business.hours}, 7 days</p>
           <p className="mt-3 text-xs text-blue-200">{business.address}</p>
 
