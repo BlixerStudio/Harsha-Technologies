@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { CTAButtons } from "@/components/cta-buttons";
 import { FAQList } from "@/components/faq-list";
 import { HeroSection } from "@/components/hero-section";
@@ -24,6 +25,33 @@ const faqs = [
     question: "Do you support WiFi and network printers?",
     answer:
       "Yes. We help with WiFi printers, shared printers, network configuration and driver setup."
+  }
+];
+
+const issueLinks = [
+  {
+    label: "Printer not printing or printing blank pages",
+    href: "/services/printer-repair"
+  },
+  {
+    label: "Paper jam and repeated feed errors",
+    href: "/services/printer-repair"
+  },
+  {
+    label: "Printer offline or not detected",
+    href: "/services/wifi-printer-setup"
+  },
+  {
+    label: "WiFi printer not connecting",
+    href: "/services/wifi-printer-setup"
+  },
+  {
+    label: "Faint print, toner issue or cartridge error",
+    href: "/services/laser-printer-repair"
+  },
+  {
+    label: "Scanner not working on multifunction printers",
+    href: "/services/scanner-repair"
   }
 ];
 
@@ -75,16 +103,14 @@ export default function ServicesPage() {
               text="A quick description on the call helps classify the repair visit and urgency."
             />
             <ul className="grid gap-3">
-              {[
-                "Printer not printing or printing blank pages",
-                "Paper jam and repeated feed errors",
-                "Printer offline or not detected",
-                "WiFi printer not connecting",
-                "Faint print, toner issue or cartridge error",
-                "Scanner not working on multifunction printers"
-              ].map((item) => (
-                <li className="rounded-md border border-line bg-white px-4 py-3 font-semibold text-slate-700" key={item}>
-                  {item}
+              {issueLinks.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    className="block rounded-md border border-line bg-white px-4 py-3 font-semibold text-slate-700 transition hover:border-brand-blue hover:text-brand-blue"
+                    href={item.href}
+                  >
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>

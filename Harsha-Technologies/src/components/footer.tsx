@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { areasData } from "@/content/areas-data";
 import { business, primaryAreas } from "@/content/site";
 
 const footerServices = [
@@ -36,6 +37,12 @@ const footerCompany = [
   ["Service Locations", "/printer-repair-service-locations-hyderabad"]
 ];
 
+function areaHref(areaName: string) {
+  if (areaName === "Kukatpally") return "/areas/kukatpally-printer-repair";
+  const area = areasData.find((item) => item.name === areaName);
+  return area ? `/areas/${area.slug}` : "/areas";
+}
+
 export function Footer() {
   return (
     <footer className="bg-brand-navy pb-24 pt-14 text-white md:pb-10">
@@ -52,9 +59,13 @@ export function Footer() {
 
           <div className="mt-6 flex flex-wrap gap-2">
             {primaryAreas.slice(0, 8).map((area) => (
-              <span className="rounded-md bg-white/10 px-2 py-1 text-xs text-blue-200" key={area}>
+              <Link
+                className="rounded-md bg-white/10 px-2 py-1 text-xs text-blue-200 transition hover:bg-white/20 hover:text-white"
+                href={areaHref(area)}
+                key={area}
+              >
                 {area}
-              </span>
+              </Link>
             ))}
           </div>
         </div>

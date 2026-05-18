@@ -10,19 +10,19 @@ export function CTAButtons({ commercial = false, className = "" }: CTAButtonsPro
   return (
     <div className={`flex flex-col gap-3 sm:flex-row ${className}`}>
       <a
-        className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-brand-blue px-5 py-3 text-sm font-bold text-white shadow-soft transition hover:bg-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2"
+        className="inline-flex min-h-12 min-w-[190px] items-center justify-center gap-2 whitespace-nowrap rounded-md bg-brand-blue px-4 py-3 text-[13px] font-bold text-white shadow-soft transition hover:bg-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 sm:text-sm"
         href={business.phoneHref}
       >
-        <Phone aria-hidden="true" size={18} />
-        Call {business.phoneDisplay}
+        <Phone aria-hidden="true" className="shrink-0" size={18} />
+        <span>Call {business.phoneDisplay}</span>
       </a>
       <a
-        className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-brand-green px-5 py-3 text-sm font-bold text-white shadow-soft transition hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-offset-2"
+        className="inline-flex min-h-12 min-w-[160px] items-center justify-center gap-2 whitespace-nowrap rounded-md bg-brand-green px-4 py-3 text-sm font-bold text-white shadow-soft transition hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-offset-2"
         href={business.whatsappHref}
         target="_blank"
         rel="noreferrer"
       >
-        <MessageCircle aria-hidden="true" size={18} />
+        <MessageCircle aria-hidden="true" className="shrink-0" size={18} />
         WhatsApp Now
       </a>
       {commercial ? (

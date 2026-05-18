@@ -48,6 +48,21 @@ function brandHref(brandName: string) {
   return brand ? `/brands/${brand.slug}` : "/brands";
 }
 
+function commercialSegmentHref(segment: string) {
+  const links: Record<string, string> = {
+    Offices: "/business-amc/office-printer-amc-hyderabad",
+    "IT companies": "/business-amc/corporate-printer-support",
+    "Schools and colleges": "/business-amc/school-printer-amc",
+    "Clinics and hospitals": "/business-amc/clinic-printer-support",
+    "Co-working spaces": "/business-amc/printer-amc-hyderabad",
+    "Xerox centers": "/services/copier-repair",
+    "Retail outlets": "/business-amc/printer-amc-hyderabad",
+    "Multi-branch teams": "/business-amc/corporate-printer-support"
+  };
+
+  return links[segment] ?? "/business-amc";
+}
+
 export const metadata: Metadata = pageMetadata({
   title: "Printer Repair Services in Hyderabad",
   description:
@@ -98,10 +113,14 @@ export default function HomePage() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {commercialSegments.map((segment) => (
-              <div className="rounded-lg border border-line bg-white p-5" key={segment}>
+              <Link
+                className="rounded-lg border border-line bg-white p-5 transition hover:border-brand-blue hover:bg-blue-50"
+                href={commercialSegmentHref(segment)}
+                key={segment}
+              >
                 <Building2 aria-hidden="true" className="mb-3 text-brand-blue" size={22} />
                 <p className="font-bold text-brand-navy">{segment}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
