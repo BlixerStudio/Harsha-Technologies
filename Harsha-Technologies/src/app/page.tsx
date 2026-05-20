@@ -64,9 +64,9 @@ function commercialSegmentHref(segment: string) {
 }
 
 export const metadata: Metadata = pageMetadata({
-  title: "Printer Repair Services in Hyderabad",
+  title: "Printer Repair & Service Center in Hyderabad",
   description:
-    "Harsha Technologies provides same-day doorstep printer repair, HP printer support and office printer AMC in Kukatpally and across Hyderabad.",
+    "Harsha Technologies provides same-day doorstep printer repair, HP printer support and office printer service center solutions in Kukatpally and across Hyderabad.",
   path: "/"
 });
 
@@ -78,10 +78,10 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
       />
       <HeroSection
-        title="Harsha Technologies"
-        description={`Fast doorstep printer repair in Hyderabad for homes, offices, schools, clinics and businesses from ${business.shortAddress}.`}
+        title="Printer Repair & Service Center in Hyderabad"
+        description={`Harsha Technologies provides fast doorstep printer repair and service in Hyderabad for homes, offices, schools, clinics and businesses from ${business.shortAddress}.`}
         image="/images/services/printer-repair-hyderabad-temporary.png"
-        imageAlt="Harsha Technologies printer repair support in Hyderabad"
+        imageAlt="Harsha Technologies printer repair & service center in Hyderabad"
         points={[
           "HP, Canon, Epson, Brother and more",
           "Call and WhatsApp booking",

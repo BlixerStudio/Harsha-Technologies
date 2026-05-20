@@ -16,7 +16,8 @@ export const business = {
   postalCode: "500072",
   shortAddress: "Kukatpally, Hyderabad",
   logoPath: "/images/brand/harsha-technologies-logo.png",
-  directionsHref: "https://www.google.com/maps?q=17.48053349154913,78.40981258253333",
+  directionsHref: "https://share.google/e1Rf9symQCLfGNwc6",
+  googleBusinessProfileHref: "https://share.google/e1Rf9symQCLfGNwc6",
   hours: "8:00 AM to 9:00 PM",
   years: "13+ years",
   coordinates: {

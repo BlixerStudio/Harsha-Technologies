@@ -42,7 +42,7 @@ export default async function AreaPage({ params }: Props) {
             breadcrumbSchema([
               { name: "Home", url: "/" },
               { name: "Areas", url: "/areas" },
-              { name: `${area.name} Printer Repair`, url: `/areas/${slug}` }
+              { name: `${area.name} Printer Service & Repair`, url: `/areas/${slug}` }
             ])
           ])
         }}
@@ -61,7 +61,7 @@ export default async function AreaPage({ params }: Props) {
         <div className="container-page grid gap-8 lg:grid-cols-[1fr_0.9fr]">
           <div className="prose-copy">
             <SectionHeading
-              title={`Printer repair for ${area.name} homes and offices`}
+              title={`Printer Repair & Service Center in ${area.name}`}
               text={area.urgencyAngle}
             />
             <p>{area.bodyContent}</p>

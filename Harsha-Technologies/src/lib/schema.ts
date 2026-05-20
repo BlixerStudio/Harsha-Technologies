@@ -28,6 +28,9 @@ export function localBusinessSchema() {
       longitude: business.coordinates.longitude
     },
     openingHours: "Mo-Su 08:00-21:00",
+    sameAs: [
+      business.googleBusinessProfileHref
+    ],
     areaServed: primaryAreas.map((area) => ({
       "@type": "Place",
       name: `${area}, Hyderabad`
@@ -89,6 +92,9 @@ export function organizationSchema() {
     name: "Harsha Technologies",
     url: "https://harshatechnologies.in/",
     logo: `${business.domain}${business.logoPath}`,
+    sameAs: [
+      business.googleBusinessProfileHref
+    ],
     founder: {
       "@type": "Person",
       name: business.ownerName

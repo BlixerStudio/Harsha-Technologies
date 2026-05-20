@@ -18,9 +18,9 @@ export const areasData: AreaData[] = [
   {
     slug: "kphb-printer-repair",
     name: "KPHB",
-    title: "Printer Repair in KPHB",
+    title: "Printer Repair & Service Center in KPHB",
     description:
-      "Need printer repair in KPHB? Harsha Technologies provides same-day doorstep support for HP, Canon, Epson and office printers across KPHB Colony.",
+      "Need printer repair or printer service center support in KPHB? Harsha Technologies provides same-day doorstep support for HP, Canon, Epson and office printers across KPHB Colony.",
     heroDescription:
       "Doorstep printer repair for KPHB Colony homes, offices, coaching centers and shops. Fast same-day support from Kukatpally.",
     heroPoints: [
@@ -38,7 +38,7 @@ export const areasData: AreaData[] = [
     ctaLabel: "Book KPHB printer repair",
     faqs: [
       {
-        question: "Do you provide printer repair in KPHB Colony?",
+        question: "Do you provide printer repair and service in KPHB Colony?",
         answer:
           "Yes. Harsha Technologies covers KPHB Colony and nearby phases for doorstep printer repair and office support."
       },
@@ -57,9 +57,9 @@ export const areasData: AreaData[] = [
   {
     slug: "miyapur-printer-repair",
     name: "Miyapur",
-    title: "Printer Repair in Miyapur",
+    title: "Printer Repair & Service Center in Miyapur",
     description:
-      "Printer repair in Miyapur with same-day doorstep support. Harsha Technologies covers Miyapur homes, offices and metro-zone businesses.",
+      "Printer repair & service center in Miyapur with same-day doorstep support. Harsha Technologies covers Miyapur homes, offices and metro-zone businesses.",
     heroDescription:
       "Fast doorstep printer repair in Miyapur. Support for HP, Canon, Epson and multi-printer offices near the metro corridor.",
     heroPoints: [
@@ -77,7 +77,7 @@ export const areasData: AreaData[] = [
     ctaLabel: "Book Miyapur printer repair",
     faqs: [
       {
-        question: "Is Miyapur covered for printer repair?",
+        question: "Is Miyapur covered for printer repair & service?",
         answer:
           "Yes. Miyapur is a regular service area. Harsha Technologies provides doorstep printer repair for homes and offices."
       },
@@ -96,9 +96,9 @@ export const areasData: AreaData[] = [
   {
     slug: "nizampet-printer-repair",
     name: "Nizampet",
-    title: "Printer Repair in Nizampet",
+    title: "Printer Repair & Service Center in Nizampet",
     description:
-      "Printer repair in Nizampet by Harsha Technologies. Same-day doorstep support for HP, Canon and office printers in Nizampet.",
+      "Printer repair & service center in Nizampet by Harsha Technologies. Same-day doorstep support for HP, Canon and office printers in Nizampet.",
     heroDescription:
       "Doorstep printer repair in Nizampet for residents, offices and businesses. Fast support from Kukatpally.",
     heroPoints: [
@@ -135,9 +135,9 @@ export const areasData: AreaData[] = [
   {
     slug: "moosapet-printer-repair",
     name: "Moosapet",
-    title: "Printer Repair in Moosapet",
+    title: "Printer Repair & Service Center in Moosapet",
     description:
-      "Printer repair in Moosapet by Harsha Technologies. Doorstep support for homes, offices and businesses in Moosapet, Hyderabad.",
+      "Printer repair & service center in Moosapet by Harsha Technologies. Doorstep support for homes, offices and businesses in Moosapet, Hyderabad.",
     heroDescription:
       "Doorstep printer repair in Moosapet. Fast support for HP, Canon, Epson and all major printer brands.",
     heroPoints: [
@@ -155,7 +155,7 @@ export const areasData: AreaData[] = [
     ctaLabel: "Book Moosapet printer repair",
     faqs: [
       {
-        question: "Is Moosapet covered for printer repair?",
+        question: "Is Moosapet covered for printer repair & service?",
         answer:
           "Yes. Moosapet is within our service zone. We provide doorstep printer repair for homes and offices."
       },
@@ -174,7 +174,7 @@ export const areasData: AreaData[] = [
   {
     slug: "jntu-printer-repair",
     name: "JNTU",
-    title: "Printer Repair near JNTU Hyderabad",
+    title: "Printer Repair & Service Center near JNTU Hyderabad",
     description:
       "Printer repair near JNTU Hyderabad. Fast doorstep support for student homes, hostels, coaching centers and offices near JNTU campus.",
     heroDescription:
@@ -213,9 +213,9 @@ export const areasData: AreaData[] = [
   {
     slug: "bachupally-printer-repair",
     name: "Bachupally",
-    title: "Printer Repair in Bachupally",
+    title: "Printer Repair & Service Center in Bachupally",
     description:
-      "Printer repair in Bachupally by Harsha Technologies. Same-day doorstep support for homes, offices and growing businesses in Bachupally.",
+      "Printer repair & service center in Bachupally by Harsha Technologies. Same-day doorstep support for homes, offices and growing businesses in Bachupally.",
     heroDescription:
       "Doorstep printer repair in Bachupally. Fast support for HP, Canon, Epson and office printers in this growing residential zone.",
     heroPoints: [
@@ -233,7 +233,7 @@ export const areasData: AreaData[] = [
     ctaLabel: "Book Bachupally printer repair",
     faqs: [
       {
-        question: "Is Bachupally covered for printer repair?",
+        question: "Is Bachupally covered for printer repair & service?",
         answer:
           "Yes. Bachupally is within our service area. We provide doorstep printer repair for homes and offices."
       },
@@ -252,7 +252,7 @@ export const areasData: AreaData[] = [
   {
     slug: "pragathi-nagar-printer-repair",
     name: "Pragathi Nagar",
-    title: "Printer Repair in Pragathi Nagar",
+    title: "Printer Repair & Service Center in Pragathi Nagar",
     description:
       "Printer repair in Pragathi Nagar by Harsha Technologies. Doorstep support for HP, Canon and office printers in Pragathi Nagar.",
     heroDescription:
@@ -291,7 +291,7 @@ export const areasData: AreaData[] = [
   {
     slug: "madhapur-printer-repair",
     name: "Madhapur",
-    title: "Printer Repair in Madhapur",
+    title: "Printer Repair & Service Center in Madhapur",
     description:
       "Printer repair in Madhapur for IT offices, startups and homes. Same-day doorstep support from Harsha Technologies.",
     heroDescription:
@@ -330,7 +330,7 @@ export const areasData: AreaData[] = [
   {
     slug: "hitech-city-printer-repair",
     name: "HITEC City",
-    title: "Printer Repair in HITEC City",
+    title: "Printer Repair & Service Center in HITEC City",
     description:
       "Printer repair in HITEC City Hyderabad. Fast commercial printer support for IT companies, corporate offices and co-working spaces.",
     heroDescription:
@@ -369,7 +369,7 @@ export const areasData: AreaData[] = [
   {
     slug: "gachibowli-printer-repair",
     name: "Gachibowli",
-    title: "Printer Repair in Gachibowli",
+    title: "Printer Repair & Service Center in Gachibowli",
     description:
       "Printer repair in Gachibowli for IT companies, offices and homes. Doorstep support from Harsha Technologies.",
     heroDescription:
@@ -408,7 +408,7 @@ export const areasData: AreaData[] = [
   {
     slug: "ameerpet-printer-repair",
     name: "Ameerpet",
-    title: "Printer Repair in Ameerpet",
+    title: "Printer Repair & Service Center in Ameerpet",
     description:
       "Printer repair in Ameerpet Hyderabad. Fast doorstep support for coaching institutes, offices and homes in Ameerpet.",
     heroDescription:
@@ -447,7 +447,7 @@ export const areasData: AreaData[] = [
   {
     slug: "erragadda-printer-repair",
     name: "Erragadda",
-    title: "Printer Repair in Erragadda",
+    title: "Printer Repair & Service Center in Erragadda",
     description:
       "Printer repair in Erragadda Hyderabad. Doorstep support for homes, offices and businesses in Erragadda.",
     heroDescription:
@@ -467,7 +467,7 @@ export const areasData: AreaData[] = [
     ctaLabel: "Book Erragadda printer repair",
     faqs: [
       {
-        question: "Is Erragadda covered for printer repair?",
+        question: "Is Erragadda covered for printer repair & service?",
         answer:
           "Yes. Harsha Technologies provides doorstep printer repair in Erragadda for homes and offices."
       },
@@ -486,7 +486,7 @@ export const areasData: AreaData[] = [
   {
     slug: "jubilee-hills-printer-repair",
     name: "Jubilee Hills",
-    title: "Printer Repair in Jubilee Hills",
+    title: "Printer Repair & Service Center in Jubilee Hills",
     description:
       "Printer repair in Jubilee Hills Hyderabad. Premium doorstep support for homes, studios and offices in Jubilee Hills.",
     heroDescription:
@@ -525,7 +525,7 @@ export const areasData: AreaData[] = [
   {
     slug: "banjara-hills-printer-repair",
     name: "Banjara Hills",
-    title: "Printer Repair in Banjara Hills",
+    title: "Printer Repair & Service Center in Banjara Hills",
     description:
       "Printer repair in Banjara Hills Hyderabad. Doorstep support for homes, corporate offices and businesses in Banjara Hills.",
     heroDescription:
@@ -564,7 +564,7 @@ export const areasData: AreaData[] = [
   {
     slug: "chandanagar-printer-repair",
     name: "Chandanagar",
-    title: "Printer Repair in Chandanagar",
+    title: "Printer Repair & Service Center in Chandanagar",
     description:
       "Printer repair in Chandanagar Hyderabad. Same-day doorstep support for homes, offices and businesses in Chandanagar.",
     heroDescription:
@@ -584,7 +584,7 @@ export const areasData: AreaData[] = [
     ctaLabel: "Book Chandanagar printer repair",
     faqs: [
       {
-        question: "Is Chandanagar covered for printer repair?",
+        question: "Is Chandanagar covered for printer repair & service?",
         answer:
           "Yes. Chandanagar is within our regular service area for doorstep printer repair."
       },
@@ -603,7 +603,7 @@ export const areasData: AreaData[] = [
   {
     slug: "kondapur-printer-repair",
     name: "Kondapur",
-    title: "Printer Repair in Kondapur",
+    title: "Printer Repair & Service Center in Kondapur",
     description:
       "Printer repair in Kondapur Hyderabad for IT offices, homes and businesses. Doorstep support from Harsha Technologies.",
     heroDescription:
@@ -642,7 +642,7 @@ export const areasData: AreaData[] = [
   {
     slug: "secunderabad-printer-repair",
     name: "Secunderabad",
-    title: "Printer Repair in Secunderabad",
+    title: "Printer Repair & Service Center in Secunderabad",
     description:
       "Printer repair in Secunderabad Hyderabad. Doorstep support for homes, government offices, businesses and defense establishments.",
     heroDescription:
@@ -662,7 +662,7 @@ export const areasData: AreaData[] = [
     ctaLabel: "Book Secunderabad printer repair",
     faqs: [
       {
-        question: "Is Secunderabad covered for printer repair?",
+        question: "Is Secunderabad covered for printer repair & service?",
         answer:
           "Yes. Harsha Technologies provides doorstep printer repair across Secunderabad areas."
       },
@@ -681,7 +681,7 @@ export const areasData: AreaData[] = [
   {
     slug: "kompally-printer-repair",
     name: "Kompally",
-    title: "Printer Repair in Kompally",
+    title: "Printer Repair & Service Center in Kompally",
     description:
       "Printer repair in Kompally Hyderabad. Doorstep support for homes, schools and offices in Kompally and surrounding areas.",
     heroDescription:
@@ -720,7 +720,7 @@ export const areasData: AreaData[] = [
   {
     slug: "lingampally-printer-repair",
     name: "Lingampally",
-    title: "Printer Repair in Lingampally",
+    title: "Printer Repair & Service Center in Lingampally",
     description:
       "Printer repair in Lingampally Hyderabad. Same-day doorstep support for homes and offices near Lingampally station.",
     heroDescription:
@@ -740,7 +740,7 @@ export const areasData: AreaData[] = [
     ctaLabel: "Book Lingampally printer repair",
     faqs: [
       {
-        question: "Is Lingampally covered for printer repair?",
+        question: "Is Lingampally covered for printer repair & service?",
         answer:
           "Yes. Lingampally and nearby areas like Chandanagar are in our regular service zone."
       },
