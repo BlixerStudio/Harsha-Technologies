@@ -16,16 +16,16 @@ export const servicesData: ServiceData[] = [
   {
     slug: "laser-printer-repair",
     name: "Laser Printer Repair",
-    title: "Laser Printer Repair Hyderabad",
+    title: "Laser Printer Repair Near Me - Hyderabad",
     description:
-      "Laser printer repair in Hyderabad for HP LaserJet, Canon, Brother and Xerox models. Doorstep support from Harsha Technologies.",
+      "Laser printer repair in Hyderabad. Get fast doorstep laser printer repair near me for HP LaserJet, Canon, Brother and Xerox models.",
     heroDescription:
-      "Fast doorstep laser printer repair for fuser, toner, drum, paper jam and print quality issues in Hyderabad homes and offices.",
+      "Fast doorstep laser printer repair near me for fuser, toner, drum, paper jam and print quality issues in Hyderabad homes and offices.",
     heroPoints: [
       "HP LaserJet and Canon laser repair",
       "Fuser, toner and drum servicing",
-      "Paper jam and offline fix",
-      "Office laser printer AMC"
+      "Paper jam and offline troubleshooting",
+      "Laser printer repair near me"
     ],
     commonIssues: [
       "Laser printer fuser error",
@@ -60,16 +60,16 @@ export const servicesData: ServiceData[] = [
   {
     slug: "inkjet-printer-repair",
     name: "Inkjet Printer Repair",
-    title: "Inkjet Printer Repair Hyderabad",
+    title: "Inkjet Printer Repair & Ink Tank Service",
     description:
-      "Inkjet printer repair in Hyderabad for HP, Epson, Canon PIXMA and Brother inkjet models. Doorstep support from Harsha Technologies.",
+      "Inkjet printer repair in Hyderabad. Doorstep troubleshooting for printer ink problem, cartridge issues, and clogged print heads.",
     heroDescription:
-      "Doorstep inkjet printer repair for print head, ink, paper feed and WiFi issues in Hyderabad homes and small offices.",
+      "Doorstep inkjet printer repair for printer ink problem, printer cartridge issue, print head, paper feed, and WiFi issues.",
     heroPoints: [
       "Epson EcoTank and PIXMA repair",
-      "Print head cleaning and ink flow fix",
-      "Paper feed and jam resolution",
-      "WiFi and driver setup included"
+      "Fix printer ink problem & cartridge issue",
+      "Resolve printer printing blank pages",
+      "Inkjet printer repair near me"
     ],
     commonIssues: [
       "Inkjet printer not printing after refill",
@@ -236,16 +236,16 @@ export const servicesData: ServiceData[] = [
   {
     slug: "wifi-printer-setup",
     name: "WiFi Printer Setup",
-    title: "WiFi Printer Setup Hyderabad",
+    title: "WiFi Printer Setup & Installation Service",
     description:
-      "WiFi printer setup in Hyderabad for home and office wireless printers. Doorstep configuration from Harsha Technologies.",
+      "WiFi printer setup and printer installation service in Hyderabad. Solve wifi printer not connecting and driver offline issues.",
     heroDescription:
-      "Doorstep WiFi printer setup in Hyderabad. Wireless configuration, driver installation and shared office printer setup for all brands.",
+      "Doorstep WiFi printer setup and printer installation service. Fix wifi printer not connecting, spooler errors, and router setup problems.",
     heroPoints: [
-      "Wireless printer configuration",
-      "Driver installation included",
-      "Shared office printer setup",
-      "Mobile print and AirPrint setup"
+      "Wireless printer setup service",
+      "New printer installation service",
+      "Solve wifi printer not connecting",
+      "Mobile and AirPrint setup"
     ],
     commonIssues: [
       "Printer not connecting to WiFi router",
@@ -280,29 +280,29 @@ export const servicesData: ServiceData[] = [
   {
     slug: "printer-repair",
     name: "Printer Repair",
-    title: "Printer Repair Hyderabad - Doorstep Service",
+    title: "Printer Repair & Servicing near Hyderabad",
     description:
-      "Printer repair in Hyderabad for all brands and types. Same-day doorstep support from Harsha Technologies, Kukatpally.",
+      "Printer repair in Hyderabad. Get same-day doorstep printer fix near me, printer service and repair, and local printer technician support.",
     heroDescription:
-      "Doorstep printer repair across Hyderabad for homes, offices and businesses. All brands, all types, same-day support available.",
+      "Doorstep printer fix near me for homes and offices. Get same-day printer service and repair near me for any printer not working.",
     heroPoints: [
-      "All printer brands repaired",
-      "Laser, inkjet and multifunction",
-      "Same-day doorstep support",
-      "Office AMC available"
+      "Printer service and repair near me",
+      "Laser, inkjet and thermal printer repair",
+      "Doorstep printer technician near me",
+      "Home printer repair & office printer repair"
     ],
     commonIssues: [
-      "Printer not printing",
-      "Paper jam",
-      "Printer offline",
-      "Ink or toner problem",
-      "WiFi not connecting",
-      "Scanner not working"
+      "Printer not working & printer offline issue",
+      "Printer paper jam repair",
+      "Printer ink problem & printer cartridge issue",
+      "Wifi printer not connecting",
+      "Printer printing blank pages",
+      "Thermal printer repair & setup issues"
     ],
     brandsSupported: ["HP", "Canon", "Epson", "Brother", "Samsung", "Xerox", "Ricoh", "Kyocera", "Panasonic", "Zebra"],
     processSteps: ["Call or WhatsApp", "Describe issue", "Technician visit", "On-site diagnosis", "Repair", "Test and confirm"],
     bodyContent:
-      "Printer repair in Hyderabad is the core service of Harsha Technologies. From single home printers to multi-device office setups, the goal is always the same — get you printing again as fast as possible. Harsha Technologies covers all major printer brands, repair types and Hyderabad areas from our Kukatpally base. Whether it is a paper jam, offline error, ink problem, toner issue or WiFi setup — call or WhatsApp for fastest booking.",
+      "If you are experiencing a printer offline issue, a printer paper jam repair requirement, or your printer is simply not working, Harsha Technologies is here to help. We provide doorstep printer setup service, printer installation service, home printer repair, office printer repair, and thermal printer repair for billing counters across Hyderabad. Our same-day printer service and repair ensures a local printer technician near me visits your home or office quickly to fix printing repairs.",
     faqs: [
       {
         question: "What types of printers do you repair in Hyderabad?",
@@ -324,16 +324,16 @@ export const servicesData: ServiceData[] = [
   {
     slug: "copier-repair",
     name: "Copier Repair",
-    title: "Copier Repair Hyderabad",
+    title: "Copier & Xerox Machine Repair Hyderabad",
     description:
-      "Copier repair in Hyderabad for office photocopiers and multifunction copier devices. Commercial support from Harsha Technologies.",
+      "Copier and xerox machine repair in Hyderabad. Get doorstep troubleshooting for office copiers and multifunction devices.",
     heroDescription:
-      "Doorstep copier repair in Hyderabad for office photocopiers, multifunction devices and high-volume copy machines.",
+      "Doorstep copier and xerox machine repair in Hyderabad. Fast repair and servicing for commercial copy machines and scanners.",
     heroPoints: [
-      "Office copier repair",
+      "Office copier & xerox machine repair",
       "Xerox and Canon copier support",
-      "Toner, drum and fuser servicing",
-      "Commercial copier AMC"
+      "Toner, drum, and paper feed fix",
+      "Commercial copier & xerox machine repair AMC"
     ],
     commonIssues: [
       "Copier paper jam in ADF",

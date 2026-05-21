@@ -18,11 +18,11 @@ export const areasData: AreaData[] = [
   {
     slug: "kphb-printer-repair",
     name: "KPHB",
-    title: "Printer Repair & Service Center in KPHB",
+    title: "Printer Repair & Service Center near KPHB",
     description:
-      "Need printer repair or printer service center support in KPHB? Harsha Technologies provides same-day doorstep support for HP, Canon, Epson and office printers across KPHB Colony.",
+      "Looking for professional printer repair near KPHB? Harsha Technologies provides same-day doorstep printer repair and printer service near KPHB Colony homes and offices.",
     heroDescription:
-      "Doorstep printer repair for KPHB Colony homes, offices, coaching centers and shops. Fast same-day support from Kukatpally.",
+      "Get same-day printer repair near KPHB Colony for homes, offices, and tuition centers. Expert doorstep service from Kukatpally.",
     heroPoints: [
       "KPHB Colony local support",
       "Kukatpally and JNTU nearby",
@@ -57,11 +57,11 @@ export const areasData: AreaData[] = [
   {
     slug: "miyapur-printer-repair",
     name: "Miyapur",
-    title: "Printer Repair & Service Center in Miyapur",
+    title: "Printer Repair & Service Center near Miyapur",
     description:
-      "Printer repair & service center in Miyapur with same-day doorstep support. Harsha Technologies covers Miyapur homes, offices and metro-zone businesses.",
+      "Need printer repair near Miyapur? Harsha Technologies offers doorstep printer repair near Miyapur with same-day technicians for homes and offices.",
     heroDescription:
-      "Fast doorstep printer repair in Miyapur. Support for HP, Canon, Epson and multi-printer offices near the metro corridor.",
+      "Reliable doorstep printer repair near Miyapur with same-day support for HP, Canon, Epson and Brother printers.",
     heroPoints: [
       "Miyapur metro zone coverage",
       "KPHB and Chandanagar nearby",
@@ -174,15 +174,15 @@ export const areasData: AreaData[] = [
   {
     slug: "jntu-printer-repair",
     name: "JNTU",
-    title: "Printer Repair & Service Center near JNTU Hyderabad",
+    title: "Printer Repair & Service Center near JNTU",
     description:
-      "Printer repair near JNTU Hyderabad. Fast doorstep support for student homes, hostels, coaching centers and offices near JNTU campus.",
+      "Looking for professional printer service near JNTU? Harsha Technologies offers doorstep printer repair and printer service near JNTU Hyderabad campus.",
     heroDescription:
-      "Doorstep printer repair near JNTU campus for student homes, hostels, coaching centers and nearby offices.",
+      "Get same-day printer repair and printer service near JNTU campus for student homes, hostels, coaching centers, and offices.",
     heroPoints: [
+      "Printer service near JNTU",
       "JNTU campus area coverage",
-      "Kukatpally and KPHB nearby",
-      "HP and Canon repair",
+      "HP and Canon repair near JNTU",
       "Quick support for student zone"
     ],
     landmarks: ["JNTU Hyderabad Campus", "JNTU Road", "JNTU Metro Station", "JNTU Engineering College"],

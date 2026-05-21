@@ -16,11 +16,11 @@ export const brandsData: BrandData[] = [
   {
     slug: "canon-printer-repair",
     name: "Canon",
-    title: "Canon Printer Repair Hyderabad",
+    title: "Canon Printer Repair & Servicing Hyderabad",
     description:
-      "Canon printer repair in Hyderabad for PIXMA, laser and multifunction models. Doorstep support from Harsha Technologies.",
+      "Canon printer repair and servicing in Hyderabad. Skip the canon servicing centre near me queue and get doorstep repair for Canon PIXMA and laser printers.",
     heroDescription:
-      "Fast doorstep support for Canon PIXMA, laser, inkjet and multifunction printer problems. Home and office Canon repair across Hyderabad.",
+      "Fast doorstep support for Canon PIXMA, laser, inkjet and multifunction printer problems. Get home and office Canon servicing without visiting a canon servicing centre.",
     heroPoints: [
       "Canon PIXMA and laser repair",
       "Ink, paper jam and offline fixes",
@@ -46,7 +46,7 @@ export const brandsData: BrandData[] = [
     repairLogic:
       "Canon printers use proprietary ink systems and print head designs. Common failure points include ink head clogging in PIXMA models, paper pickup issues and cartridge chip errors. Office imageRUNNER models may need drum or toner unit servicing.",
     bodyContent:
-      "Canon printers are widely used across Hyderabad homes, offices and businesses. PIXMA models are popular for home and photo printing while imageRUNNER and imageCLASS models handle heavy office workloads. Harsha Technologies provides doorstep repair for Canon printers that are not printing, offline, jamming paper, showing cartridge errors or failing to scan. For offices with recurring Canon printer issues, ask about AMC support.",
+      "Canon printers are widely used across Hyderabad homes, offices and businesses. PIXMA models are popular for home and photo printing while imageRUNNER and imageCLASS models handle heavy office workloads. If you are searching for a canon servicing centre near me or a canon servicing centre in Hyderabad, Harsha Technologies provides a convenient same-day doorstep alternative. We handle Canon printers that are not printing, offline, jamming paper, showing cartridge errors or failing to scan. For offices with recurring Canon printer issues, ask about AMC support.",
     faqs: [
       {
         question: "Do you repair Canon printers in Hyderabad?",
@@ -68,11 +68,11 @@ export const brandsData: BrandData[] = [
   {
     slug: "epson-printer-repair",
     name: "Epson",
-    title: "Epson Printer Repair Hyderabad",
+    title: "Epson Printer Repair & Servicing Hyderabad",
     description:
-      "Epson printer repair in Hyderabad for EcoTank, inkjet, L-series and office models. Doorstep support from Harsha Technologies.",
+      "Epson printer repair and epson printer servicing in Hyderabad. Doorstep Epson servicing centre alternative for EcoTank, inkjet, L-series and office models.",
     heroDescription:
-      "Fast doorstep support for Epson EcoTank, L-series, inkjet and office printer problems in Hyderabad.",
+      "Fast doorstep support and epson printer servicing for Epson EcoTank, L-series, inkjet and office printer problems in Hyderabad.",
     heroPoints: [
       "Epson EcoTank and L-series repair",
       "Head cleaning and ink flow fix",
@@ -98,7 +98,7 @@ export const brandsData: BrandData[] = [
     repairLogic:
       "Epson EcoTank and L-series printers are prone to print head drying if unused for long periods. Waste ink pad saturation is a known lifecycle issue. Head cleaning cycles, alignment and ink flow checks resolve most cases without part replacement.",
     bodyContent:
-      "Epson printers, especially EcoTank and L-series ink tank models, are extremely popular in Hyderabad homes and small offices for their low per-page cost. However, irregular use or prolonged storage can cause print heads to clog or ink to dry. Harsha Technologies provides doorstep Epson printer repair including head cleaning, ink flow restoration, waste pad reset and WiFi setup across Hyderabad.",
+      "Epson printers, especially EcoTank and L-series ink tank models, are extremely popular in Hyderabad homes and small offices for their low per-page cost. When looking for epson printer servicing or an epson servicing centre in Hyderabad, Harsha Technologies offers on-site head cleaning, ink flow restoration, waste pad reset and WiFi setup with no carry-in hassle.",
     faqs: [
       {
         question: "Do you repair Epson EcoTank printers in Hyderabad?",
@@ -120,11 +120,11 @@ export const brandsData: BrandData[] = [
   {
     slug: "brother-printer-repair",
     name: "Brother",
-    title: "Brother Printer Repair Hyderabad",
+    title: "Brother Printer Repairs & Servicing Hyderabad",
     description:
-      "Brother printer repair in Hyderabad for laser, inkjet and multifunction models. Doorstep support from Harsha Technologies.",
+      "Brother printer repairs and brother printer servicing in Hyderabad. Doorstep Brother printer repairs near me for laser and multifunction models.",
     heroDescription:
-      "Doorstep support for Brother laser printers, inkjet MFPs and network printer issues in Hyderabad homes and offices.",
+      "Doorstep support for Brother printer repairs near me, inkjet MFPs and network printer servicing in Hyderabad homes and offices.",
     heroPoints: [
       "Brother laser and MFP repair",
       "Network and WiFi troubleshooting",
@@ -150,7 +150,7 @@ export const brandsData: BrandData[] = [
     repairLogic:
       "Brother laser printers are robust office workhorses but require toner, drum and fuser maintenance over time. Network connectivity issues are common when IP addresses change. Duplex paper jam issues often relate to debris in feed paths.",
     bodyContent:
-      "Brother printers are a reliable choice for offices, home offices and small businesses in Hyderabad. Their laser and multifunction models handle high print volumes efficiently. Harsha Technologies provides doorstep Brother printer repair for toner issues, drum errors, network connectivity problems, paper jams and fuser faults with AMC options for offices that depend on Brother printing daily.",
+      "Brother printers are a reliable choice for offices, home offices and small businesses in Hyderabad. Harsha Technologies provides doorstep brother printer repairs and brother printer servicing for toner issues, drum errors, network connectivity problems, paper jams and fuser faults. If you need brother printer repairs near me with same-day response, call or WhatsApp us.",
     faqs: [
       {
         question: "Do you repair Brother printers in Hyderabad?",

@@ -64,9 +64,9 @@ function commercialSegmentHref(segment: string) {
 }
 
 export const metadata: Metadata = pageMetadata({
-  title: "Printer Repair & Service Center in Hyderabad",
+  title: "Printer Service and Repair Near Me | Printer Repair Hyderabad",
   description:
-    "Harsha Technologies provides same-day doorstep printer repair, HP printer support and office printer service center solutions in Kukatpally and across Hyderabad.",
+    "Harsha Technologies offers doorstep printer service and repair near me. Same-day computer printer repair, printer servicing near me, and printer technician support across Hyderabad.",
   path: "/"
 });
 
@@ -79,14 +79,14 @@ export default function HomePage() {
       />
       <HeroSection
         title="Printer Repair & Service Center in Hyderabad"
-        description={`Harsha Technologies provides fast doorstep printer repair and service in Hyderabad for homes, offices, schools, clinics and businesses from ${business.shortAddress}.`}
+        description={`Need a printer fix near me or computer printer repair? Harsha Technologies provides doorstep printer service and repair in Hyderabad for homes, offices, and schools from ${business.shortAddress}.`}
         image="/images/services/printer-repair-hyderabad-temporary.png"
-        imageAlt="Harsha Technologies printer repair & service center in Hyderabad"
+        imageAlt="Harsha Technologies printer service and repair near me Hyderabad"
         points={[
-          "HP, Canon, Epson, Brother and more",
-          "Call and WhatsApp booking",
-          "Office printer AMC available",
-          "Serving Kukatpally and nearby Hyderabad areas"
+          "Epson, HP, Canon, and Brother printer servicing",
+          "Same-day computer printer repair near me",
+          "Experienced printer technician near me",
+          "Printer repair Hyderabad and surrounding areas"
         ]}
         commercial
       />
@@ -96,7 +96,7 @@ export default function HomePage() {
         <div className="container-page">
           <SectionHeading
             title="Printer services built around urgent calls"
-            text="The first job is to help you get working again. The second job is to make sure offices with repeated printer issues have a dependable maintenance path."
+            text="If you are looking to repair printers near me or need a professional computer printer repair service, we can help. Harsha Technologies is a premier printing repair shop near me offering doorstep printer service repair near me for homes and offices."
           />
           <ServiceGrid />
         </div>

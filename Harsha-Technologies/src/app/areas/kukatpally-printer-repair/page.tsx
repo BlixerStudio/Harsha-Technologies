@@ -27,9 +27,9 @@ const faqs = [
 ];
 
 export const metadata: Metadata = pageMetadata({
-  title: "Printer Repair in Kukatpally",
+  title: "Printer Repair & Printer Service Kukatpally",
   description:
-    "Need printer repair in Kukatpally? Harsha Technologies provides same-day doorstep support for HP, Canon, Epson and office printers.",
+    "Need printer repair or printer service Kukatpally? Harsha Technologies provides doorstep HP printer repair Kukatpally, Epson printer service Kukatpally, and Canon printer repair Kukatpally.",
   path: "/areas/kukatpally-printer-repair"
 });
 
@@ -65,10 +65,10 @@ export default function KukatpallyPage() {
               text="Kukatpally has homes, hostels, offices, clinics, coaching centers and shops where a printer breakdown can quickly interrupt work. This page is focused on fast practical repair and repeat support for nearby customers."
             />
             <p>
-              Harsha Technologies handles common printer issues such as paper jams, offline errors, WiFi setup, driver installation, faint prints, toner problems and HP printer troubleshooting in and around Kukatpally.
+              Harsha Technologies handles common printer issues such as paper jams, offline errors, WiFi setup, driver installation, faint prints, toner problems and HP printer troubleshooting in and around Kukatpally. If you need a certified **printer technician Kukatpally** home or business users can call on, we are based locally.
             </p>
             <p className="mt-4">
-              For offices with repeated issues, ask about AMC support so printer maintenance becomes planned instead of emergency-only.
+              We specialize in brand-specific doorstep support, offering **HP printer repair Kukatpally**, **Epson printer service Kukatpally**, and **Canon printer repair Kukatpally**. Our technicians provide reliable **printer service Kukatpally** residents trust for same-day troubleshooting and scheduled printer maintenance.
             </p>
           </div>
           <div className="rounded-lg border border-line bg-brand-soft p-6">
