@@ -10,6 +10,21 @@ const ADS_ID = "AW-10854028175";
 export function Analytics() {
   return (
     <>
+      {/* Microsoft Clarity */}
+      <Script
+        id="microsoft-clarity"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "wx08c427si");
+          `,
+        }}
+      />
+
       {/* Load the gtag library once using the GA4 ID */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
