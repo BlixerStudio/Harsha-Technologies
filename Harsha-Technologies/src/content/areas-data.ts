@@ -640,45 +640,6 @@ export const areasData: AreaData[] = [
     ]
   },
   {
-    slug: "secunderabad-printer-repair",
-    name: "Secunderabad",
-    title: "Printer Repair & Service Center in Secunderabad",
-    description:
-      "Printer repair in Secunderabad Hyderabad. Doorstep support for homes, government offices, businesses and defense establishments.",
-    heroDescription:
-      "Doorstep printer repair in Secunderabad for government offices, businesses, homes and defense-area establishments.",
-    heroPoints: [
-      "Secunderabad coverage",
-      "Begumpet and Alwal nearby",
-      "Government and commercial support",
-      "All brands repaired"
-    ],
-    landmarks: ["Secunderabad Station", "Trimulgherry", "Secunderabad Cantonment", "SP Road"],
-    nearbyAreas: ["Begumpet", "Alwal", "Kompally", "Marredpally"],
-    customerTypes: ["Government offices", "Defense establishments", "Shops", "Homes"],
-    urgencyAngle: "Secunderabad's government and cantonment offices rely heavily on printers for documentation and official paperwork.",
-    bodyContent:
-      "Secunderabad is Hyderabad's twin city with a mix of government establishments, defense areas, commercial zones and residential neighborhoods. High printer usage for official documentation creates constant repair demand. Harsha Technologies covers Secunderabad for doorstep printer repair for all brands used in government, commercial and residential settings.",
-    ctaLabel: "Book Secunderabad printer repair",
-    faqs: [
-      {
-        question: "Is Secunderabad covered for printer repair & service?",
-        answer:
-          "Yes. Harsha Technologies provides doorstep printer repair across Secunderabad areas."
-      },
-      {
-        question: "Can you fix government office printers in Secunderabad?",
-        answer:
-          "Yes. Government offices and commercial establishments in Secunderabad can book doorstep repair visits."
-      },
-      {
-        question: "Do you support HP and Canon in Secunderabad?",
-        answer:
-          "Yes. All major brands including HP, Canon, Epson, Brother and Xerox are serviced in Secunderabad."
-      }
-    ]
-  },
-  {
     slug: "kompally-printer-repair",
     name: "Kompally",
     title: "Printer Repair & Service Center in Kompally",
@@ -688,12 +649,12 @@ export const areasData: AreaData[] = [
       "Doorstep printer repair in Kompally for residential areas, schools and offices on Hyderabad's northern edge.",
     heroPoints: [
       "Kompally residential coverage",
-      "Alwal and Secunderabad nearby",
+      "Alwal and Medchal nearby",
       "School and home printer support",
       "All brands serviced"
     ],
     landmarks: ["Kompally Main Road", "Kompally Junction", "ORR Kompally exit"],
-    nearbyAreas: ["Alwal", "Secunderabad", "Medchal", "Bachupally"],
+    nearbyAreas: ["Alwal", "Medchal", "Bachupally"],
     customerTypes: ["Homes", "Schools", "Offices", "Small businesses"],
     urgencyAngle: "Kompally's school-dense residential community needs reliable printer support for student and office use.",
     bodyContent:

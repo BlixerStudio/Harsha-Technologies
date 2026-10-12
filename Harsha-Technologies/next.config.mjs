@@ -26,6 +26,12 @@ const nextConfig = {
         source: "/index.html",
         destination: "/",
         permanent: true
+      },
+      {
+        // Secunderabad is outside the service area; keep the old URL from 404ing.
+        source: "/areas/secunderabad-printer-repair",
+        destination: "/areas",
+        permanent: true
       }
     ];
   }

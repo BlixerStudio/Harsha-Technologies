@@ -6,7 +6,8 @@ import { getAllServiceSlugs } from "@/content/services-data";
 import { getAllBlogSlugs } from "@/content/blog-data";
 import { getAllAmcSlugs } from "@/content/amc-data";
 
-const now = new Date("2026-04-29");
+// Generated at build time, so lastmod moves forward with each deploy.
+const now = new Date();
 
 type SitemapRoute = {
   url: string;
@@ -52,7 +53,14 @@ function buildRoutes(): SitemapRoute[] {
     routes.push({ url: `/business-amc/${slug}`, priority: 0.8, changeFrequency: "monthly" });
   });
 
-  return routes;
+  // Some pages are listed explicitly and also come from the slug helpers;
+  // keep the first entry for each URL so the sitemap has no duplicates.
+  const seen = new Set<string>();
+  return routes.filter((route) => {
+    if (seen.has(route.url)) return false;
+    seen.add(route.url);
+    return true;
+  });
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
