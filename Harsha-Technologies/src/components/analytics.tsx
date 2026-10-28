@@ -8,6 +8,11 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-98YQ31V967";
 const ADS_ID = "AW-18050293247";
 // "Website call click" conversion action in that account (ID/label)
 const CALL_CLICK_CONVERSION = "AW-18050293247/9OsPCPDlzJkdEP-7hp9D";
+// "Calls from website visits" conversion. Google swaps the number below for a
+// tracking number shown only to visitors who arrive from Google Ads, and
+// records each call and its length. The number must match what the site shows.
+const PHONE_CALL_CONVERSION = "AW-18050293247/CipgCN6znK0dEP-7hp9D";
+const PHONE_DISPLAY_NUMBER = "+91 90634 84335";
 // Previous Ads tag, kept so existing data collection is not interrupted.
 // It is not the account running HT-CALL; remove once confirmed unused.
 const LEGACY_ADS_ID = "AW-10854028175";
@@ -52,6 +57,11 @@ export function Analytics() {
             // Google Ads — links this site to the HT-CALL Ads account
             gtag('config', '${ADS_ID}');
             gtag('config', '${LEGACY_ADS_ID}');
+
+            // Google forwarding number for ad visitors (website call tracking)
+            gtag('config', '${PHONE_CALL_CONVERSION}', {
+              'phone_conversion_number': '${PHONE_DISPLAY_NUMBER}'
+            });
 
             // Phone click → Google Ads "Website call click" conversion (with label)
             document.addEventListener('click', function(e) {
