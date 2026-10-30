@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { areasData } from "@/content/areas-data";
 import { business, primaryAreas } from "@/content/site";
+import { BlixerCredit } from "./blixer-credit";
 
 const footerServices = [
   ["Printer Repair", "/services"],
@@ -128,6 +129,7 @@ export function Footer() {
             <a className="hover:text-white" href="/llms.txt">llms.txt</a>
             <a className="hover:text-white" href="/robots.txt">robots.txt</a>
           </div>
+          <BlixerCredit />
         </div>
       </div>
     </footer>
